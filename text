@@ -1,0 +1,20 @@
+MAIN FILE : HackerEarth - pets.ipynb
+
+APPROACH:
+1)First did some data cleaning and observation of both train.csv and test.csv .
+2)Using cross_val_score choose the best model. Decision Tree, RandomForest and xgboost resulted in above 85 % of accuracy and out of these 3, xgboost performed the best.
+3)Training of model and then prediction of the values.
+4)Saving answers into a new csv file.
+
+FEATURE ENGINEERING:
+1)For handling the issue_date and listing_date, I have converted them into datetime format, took the difference and seperated the number of days.
+2)For handling the color_type I used OneHotEncoding.
+3)As I have used xgboost, I did'nt handle missing values and let the xgboost handle it.
+
+TOOLS / PACKAGES USED:
+1)python 3.0 as main langulage.
+2)pandas package for data manipulation and analysis.
+3)numpy package for high-level mathematical functions to operate on arrays.
+4)seaborn as data visualization.
+4)cross_val_score for predicting scores on train dataset.
+5)xgboost as a classifier.
